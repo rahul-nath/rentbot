@@ -1,0 +1,19 @@
+application: ta-sessions
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /bootstrap
+  static_dir: bootstrap
+- url: /.*
+  script: project_bailey.app
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
