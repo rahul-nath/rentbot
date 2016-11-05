@@ -1,28 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
-<category><pattern>WHAT ARE MY RIGHTS *</pattern>
-<template>Your rights as a tennat...</template>
+<category><pattern>WHAT ARE MY RIGHTS ^</pattern>
+<template>Your rights as a tenant...</template>
 </category>
 
-<category><pattern>WHAT HAPPENS * EVICTED *</pattern>
+<category><pattern>WHAT HAPPENS * EVICTED ^</pattern>
 <template>If you get evicted...</template>
 </category>
 
-<category><pattern>WHO * REGULATES * RENT * SAN FRANCISCO *</pattern>
+<category><pattern>WHO * REGULATES * RENT * SAN FRANCISCO ^</pattern>
 <template>In San Francisco...</template>
 </category>
 
-<category><pattern>WHAT * RENT CONTROL * SAN FRANCISCO *</pattern>
+<category><pattern>WHAT * RENT CONTROL * SAN FRANCISCO ^</pattern>
 <template>Rent control is...</template>
 </category>
 
-<category><pattern>HOW MANY DAYS * SECURITY DEPOSIT *</pattern>
+<category><pattern>HOW MANY DAYS * SECURITY DEPOSIT ^</pattern>
 <template>Security desposits are available...</template>
 </category>
 
-<category><pattern>* DISPOSSESSORY AFFIDAVIT *</pattern>
+<category><pattern>^ DISPOSSESSORY AFFIDAVIT ^</pattern>
 <template>I don't even know what that is...</template>
 </category>
+
+<category><pattern>^ RENTERS * MONEY * EVICTED ^</pattern>
+<template></template>
+</category>
+
+<category><pattern>HOW * NOTICE * LANDLORD * MOVE OUT ^</pattern>
+<template>Some period of time thats more than nothing.</template>
+</category>
+
+<category><pattern>^ ELLIS ACT ^</pattern>
+<template>A California State law that allow for a landlord to evict residential tenants in order to "go out of the rental business". There are specific stipulations to how a landlord can invoke this act for the purpose of eviction.</template>
+</category>
+
+<category><pattern>WHAT * FEDERAL ANTI-DESCRIMINATION LAW ^</pattern><template>Title VII of the Civil Rights Act of 1964(42 U.S.C. 200e and following) prohibits employers from discriminating against applicants and employees on the basis of race,color, religion, sex, and national origin(including membership in a Native American tribe.</template>
+</category>
+
+<category><pattern>WHAT * SERVICE ANIMALS</pattern>
+<template>A service animal is a dog that has been trained to assist a person with a disability.</template>
+</category>
+
+<category><pattern>WHAT * DISCLOSURE REQUIREMENTS ^</pattern>
+<template></template>
+</category>
+
+<category><pattern>WHAT * TENANT PRIVACY ^</pattern>
+<template></template>
+</category>
+
+
+<category><pattern>HOW * Landlord REMOVE TENANT ^</pattern>
+<template>Wonderboy</template>
+</category>
+
+<category><pattern>^ EVICTED * TIME * NEW PLACE ^</pattern>
+<template>You will not be locked out on the day of the hearing. You will not have to leave the apartment until after you recieve the warrant for removal, you habe atleast three days to elave your apartment. The three days do not include weekends or legal holidays.</template>
+</category>
+
+<category><pattern>HOW * EXPENSIVE * RENT ^</pattern>
+<template>This depends greatly on where you live. </template>
+</category>
+
+<category><pattern>HOW * SECURITY DEPOSIT ^</pattern>
+<template>California Civil Code Section 1950.5 requires within three weeks (21 days) after a tenant has vacated the unit, the owner must either:1) return the security deposit to the tenant, 2) furnish a copy of an itemized statement indicating the amount of any part of the security deposit used (e.g. for unpaid rent, repairs, etc.), or 3) a combination of #1 and #2.</template>
+</category>
+
+<category><pattern>WHAT * RENT PRICE * SAN FRANCISCO ^</pattern>
+<template>The average rent price in San Francisco is $3825 per month. FOr a one person bedroom the average is $3382 per month, for a two person bedroom: $4621.</template>
+</category>
+
+<category><pattern>WHAT * RENT CONTROL ^</pattern>
+<template>Rent control is a system of government regulation governing the amounts that can be charged for rental housing</template>
+</category>
+
+<category><pattern>* LANDLORD * PAY RELOCATION FEES ^</pattern>
+<template>Under the Rent Stabilization ORginance(RSO), a landlord is only required to pay monetary relocation assistance payments to tenants being exicted through no fault of their own.</template>
+</category>
+
+<category><pattern>WHEN * LANDLORD ENTER *</pattern>
+<template></template>
+</category>
+
+<category><pattern>WHAT * SECURITY DEPOSIT ^</pattern>
+<template>Security deposit is any money a landlord takes from a tenant other than the advance payments of rent. The security deposit serves to protect the landlord if the tenant breaks or violates the terms of the lease or rental agreement. It may be used to cover damage to the property,cleaning, key replacement, or back rent.</template>
+</category>
+
+
 
 </aiml>
