@@ -20,7 +20,6 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="https://docs.google.com/document/d/1rGUzXenY0zcQkWrxfvtbDQWRca9i0fIbGdEpg6xc8LM/" target="_blank">TA Sessions Demo</a>
           </div>
         </div>
       </nav>
@@ -34,7 +33,7 @@
           <!--Question Panel-->
           <div class="panel panel-default">
             <div class="panel-heading clearfix">
-              <h3 class="panel-title pull-left">Problems Dashboard</h3>
+              <h3 class="panel-title pull-left">Your Conversation</h3>
             </div>
             <div class="panel-body">
               <!--Question Panel Content-->
@@ -46,17 +45,10 @@
               {% for question in questions %}
                 {% if question.content %}
                       <div class="list-group-item">
-                        <h4 class="list-group-item-heading">
-                          <span class="custom-category">
-                            <button type="button" onclick="window.location='{{question.hangout}}';"
-                              class="btn btn-info btn-sm btn-group">
-                              <span aria-hidden="true"></span>Go to Group
-                            </button>
-                          </span>
-                        </h4>
+                        <h4 class="list-group-item-heading"></h4>
                         <span class="list-group-item-text">
                           <span name="q_description" value="q_description_value">
-                            {{ question.content }}
+                            {{ question }}
                           </span>
                         </span>
                       </div>
@@ -83,7 +75,7 @@
           <form class="form-horizontal" role="form" method="post">
             <div class="input-group input-group-lg">
 
-              <input name="question" type="text" class="form-control" placeholder="Find Your Problem...">
+              <input name="question" type="text" class="form-control" placeholder="How Can I Help You?">
 
               <span class="input-group-btn">
                  <input type="submit" value="Get Help" class="btn btn-primary"></input>
