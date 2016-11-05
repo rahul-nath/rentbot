@@ -2,38 +2,34 @@
 <aiml>
 
 <category><pattern>WHAT ARE MY RIGHTS ^</pattern>
-<template>Your rights as a tenant...</template>
+<template>1. Advertising cannot contain any statement indicating a preference or limitation based on any of the protected classes.<br/>2. The landlord may not make any similar implication or statement.<br/>3. A landlord cannot say that an apartment is not available when in fact it is available.<br/>4. A landlord cannot use a different set of rules for assessing applicants belonging to a protected class.<br/>5. A landlord cannot refuse to rent to persons in a protected class.<br/>6. A landlord cannot provide different services or facilities to tenants in a protected class or require a larger deposit, or treat late rental payments differently.<br/>7. A landlord cannot end a tenancy for a discriminatory reason.<br/>8. A landlord cannot harass you.</template> 
 </category>
 
 <category><pattern>WHAT HAPPENS * EVICTED ^</pattern>
-<template>If you get evicted...</template>
+<template>If you get evicted you will need to remove all of your property from the rental property in accordance with the eviction order.</template>
 </category>
 
 <category><pattern>WHO * REGULATES * RENT * SAN FRANCISCO ^</pattern>
-<template>In San Francisco...</template>
+<template> The San Francisco Rent Board helps mediate and arbitrate rental and eviction disputes between tenants and landlords.</template>
 </category>
 
 <category><pattern>WHAT * RENT CONTROL * SAN FRANCISCO ^</pattern>
-<template>Rent control is...</template>
+<template>Rent control is regulation of the amounts charged for rented housing.</template>
 </category>
 
-<category><pattern>HOW MANY DAYS * SECURITY DEPOSIT ^</pattern>
-<template>Security desposits are available...</template>
-</category>
-
-<category><pattern>^ DISPOSSESSORY AFFIDAVIT ^</pattern>
-<template>I don't even know what that is...</template>
+<category><pattern>* DISPOSSESSORY AFFIDAVIT ^</pattern>
+<template>A dispossessory warrant is a sworn statement signed by the landlord or his agent that sets forth the reason for the proposed eviction. The landlord is also required to give the tenant a copy of this warrant, and if this is not possible, must tack the warrant on the tenant's door.</template>
 </category>
 
 <category><pattern>^ RENTERS * MONEY * EVICTED ^</pattern>
-<template></template>
+<template>It depends. Say you get evicted for just cause—meaning your unit falls under the 1979 rental ordinance—because, for instance, the owner is moving in or plans to take the unit out of service. The owner is usually required to pay out around $5,300 for each tenant. (This varies depending on the eviction cause and increases each March.) Same goes for illegal units, too.</template>
 </category>
 
 <category><pattern>HOW * NOTICE * LANDLORD * MOVE OUT ^</pattern>
-<template>Some period of time thats more than nothing.</template>
+<template>Landlords are required to provide a 60-day advance notice to a resident if the landlord elects to terminate a tenancy. If the tenant has resided in the unit less than 1 year, the landlord is only required to give a 30-day notice. (Civil Code Section 1946.1)</template>
 </category>
 
-<category><pattern>^ ELLIS ACT ^</pattern>
+<category><pattern>WHAT * ELLIS ACT ^</pattern>
 <template>A California State law that allow for a landlord to evict residential tenants in order to "go out of the rental business". There are specific stipulations to how a landlord can invoke this act for the purpose of eviction.</template>
 </category>
 
@@ -45,11 +41,13 @@
 </category>
 
 <category><pattern>WHAT * DISCLOSURE REQUIREMENTS ^</pattern>
-<template></template>
+<template> If you were rejected because the landlord received negative information about you, including information from previous landlords, your employer, your bank or other third parties, you have a right to know why.
+Under the Federal Fair Credit Reporting Act a landlord has to tell you if the rejection was based on negative credit information that came from a source other than your credit report.</template>
 </category>
 
 <category><pattern>WHAT * TENANT PRIVACY ^</pattern>
-<template></template>
+<template>You have a right to privacy. Your landlord cannot come into your apartment or house without prior permission unless there is a true emergency like a fire or a flood in the bathroom.
+The landlord must give you advance notice before coming into your apartment for other reasons, like making repairs or showing the unit to a potential tenant. Some states have laws that regulate these entries and set forth rules on how much advance notice the landlord must give, and whether the landlord must tell you what time he or she will enter and why.</template>
 </category>
 
 
@@ -82,13 +80,98 @@
 </category>
 
 <category><pattern>WHEN * LANDLORD ENTER *</pattern>
-<template></template>
+<template>California laws gives five (5) reasons that a landlord can legally enter a rental unit.
+(1)   In an emergency.
+(2)   When the tenant has moved out or has abandoned the rental unit.
+(3)   To make necessary or agreed-upon repairs, decorations, alterations, or other improvements.
+(4)   To show the rental unit to prospective tenants, buyers, or lenders, or to provide entry to contractors or workers who are to perform work on the unit.
+(5)   If a court order permits the landlord to enter.
+Effective January 1, 2003, California Civil Code 1954 states that except in the first two situations above (emergencies and abandonment), the landlord must give the tenant twenty-four (24) hours written notice before entering the unit.The notice may be provided by the owner in one (1) of the following ways:
+-Personally delivered to the tenant twenty-four (24) hours prior to entry;
+-Left with someone of suitable age at the premises twenty-four (24) hours prior to entry;
+-Left on, near, or under the usual entry door of the premises twenty-four (24) hours prior to entry; or
+-Mailed to the resident six (6) days prior to the intended entry.
+If the owner or agent’s reason for entry is to exhibit the residential unit to prospective or actual purchasers, the notice may be given orally, in person, or by telephone. If the owner or agent has notified the resident in writing within 120 days of the verbal notice that the property is for sale and that the owner may contact the resident orally for the purpose of showing the unit, a twenty-four (24) hour verbal notice is presumed reasonable. At the time of entry, the owner or agent shall leave written evidence of the entry inside the unit.</template>
 </category>
 
 <category><pattern>WHAT * SECURITY DEPOSIT ^</pattern>
 <template>Security deposit is any money a landlord takes from a tenant other than the advance payments of rent. The security deposit serves to protect the landlord if the tenant breaks or violates the terms of the lease or rental agreement. It may be used to cover damage to the property,cleaning, key replacement, or back rent.</template>
 </category>
 
+<category><pattern>HOW * SECURITY DEPOSIT</pattern>
+<template>After a tenant moves out, a landlord has 21 days to return the tenant's deposit in full by mail or personally give to the tenant but a landlord can deduct from the tenant's security deposit.</template>
+</category>
 
+<category><pattern>WHAT * LEAD ^</pattern>
+<template>Under federal law, rental housing must be free of lead-based paint. It is more typical in older buildings, and up to 75 percent of the housing stock is still affected by it. No matter how old or new the premises are, watch for chipping paint, peeling paint, flaking paint, and paint dust.</template>
+</category>
+
+<category><pattern>IS * COMMERCIAL RENT ^ SAN FRANCISCO ^</pattern>
+<template>The San Francisco Rent Ordinance regulates rents and evictions for certain residential rental units in San Francisco. There is no commercial rent control in San Francisco.</template>
+</category>
+
+<category><pattern>HOW * LANDLORD ^ REMOVE ^ TENANT ^</pattern>
+<template>TO evict you with a 7-day notice, your landlord must have a reason and state that reason in writing. If you are a tenant at will (no lease), the reason must be one of these: You have seriously damaged the apartment and not repaired the damage.</template>
+</category>
+
+<category><pattern>HOW * HOUSING DISCRIMINATION</pattern>
+<template>1)refusal to sell, rent, or show available housing
+2)Requiring different terms and conditions for identical dwellings, i.e. charging higher rent, security deposit for different tenants
+3)Being told that the dwelling isn’t right for you or your family
+4)Being told that housing isn’t available in an apartment with a “For Rent” sign
+5)Housing advertisements that say “no kids” or “adults only”
+6)A refusal to make a reasonable accommodation or allow a modification to make the dwelling accessible for a person with a disability
+7)Harassment or intimidation
+8)Offering non‐standard and unfavorable terms in the purchase of a home or property insurance
+9)Terms of availability that change between a phone contact and an in‐person visit
+10)Being steered to racially segregated neighborhoods during your home search
+11)Excessive or inappropriate questioning upon requesting information about a dwelling</template>
+</category>
+
+<category><pattern>WHAT * LEGALLY UNIBHABITABLE ^</pattern>
+<template>Unsafe conditions, such as holes in the floor, plater coming down form the ceiling, bad wiring, and the like. Gross infestation of vermin such as cockroaches or mice.</template>
+</category>
+
+<category><pattern>DOES * LANDLORD ^ LEGAL REASON ^ EVICT ^</pattern>
+<template>This depends on whether you are a tenant at will or have a written lease.
+If you have a written lease, your landlord probably has to have a reason to evict you. This is also the rule if you live in subsidized housing or own your own home in a mobile home park.
+If you are a tenant at will (no lease), your landlord can evict you without giving a reason. However, he must give you 7 or 30 days notice in writing.</template>
+</category>
+
+<category><pattern>IS THERE ^ TENANT UNION ^</pattern>
+<template>The San Francisco Tenants Union is the only tenants rights advocacy in San Francisco which has the political power to endorse politicians who are involved with laws that affect tenants.</template>
+</category>
+
+<category><pattern>WHAT * RENT ORDINANCE ACT ^</pattern>
+<template>The Rent Ordinance of 1979 is a law protecting renters who live in building with a certificate of occupancy before June 13, 1979 from rent hikes and arbitrary evictions. However, if the building you currently live in doesn't have such a certificate, you don't get that protection.</template>
+</category>
+
+<category><pattern>WHAT * FAIR HOUSING ACT ^</pattern>
+<template>The Fair Housing was enacted as part of the Civil Rights Act of 1968, meant to protect potential renters from discrimination by landlords based on race, sexual identity, religious affiliation, disability, children, or nation of origin. If you believe you have been discriminated against as a renter, you can contact your local HUD (Dept. of Housing and Urban Development) for legal assistance.</template>
+</category>
+
+<category><pattern>WHAT FEDERAL LAWS ^ FAIR HOUSING ^</pattern>
+<template>Federal laws like the Fair Housing Act of 1968 and the Fair Housing Act Amendments Act of 1988 cover fair housing. They prohibit discrimination on the basis of the seven classes they protect. The federal Fair Housing Act also applies to all the aspects of the landlord and tenant relationship.</template>
+</category>
+
+<category><pattern>WHO ^ PROTECTED ^ FAIR HOUSING LAWS ^</pattern>
+<template>There are seven classes protected by the federal fair housing act: race, color, religion, sex, handicap, familial status, and national voice. Sexual orientation and marital status are sometimes protected by local state fair housing laws.</template>
+</category>
+
+<category><pattern>WHAT HOUSING ^ COVERED ^ FAIR HOUSING ACT ^</pattern>
+<template>The Fair housing Act covers public and private housing with certain limited exceptions. Examples of some housing that is covered includes:
+Multi-family buildings with at least 5 units.
+Multi-family with at least 4 units units.
+Single family homes privately owned.
+Single family homes not privately owned.</template>
+</category>
+
+<category><pattern>HOW * PROTECT ^ RIGHTS * TENANT</pattern>
+<template>Take pictures of the apartment when you first move in, especially areas that may be damaged already, and take the same picture when you move out. Save the receipts for developing the film so you know which is which and can establish the date on which you took the pictures. Or make videotape.You have several legal rights if your landlord takes action against you for nonpayment of rent or a breach of the lease. Generally, your rights relate to having proper notice of the proceedings against you, a chance to make good on the unpaid rent or to repair your breach of the lease, and rights to appeal. If you are worried that you may be evicted, you may want to discuss the situation with a lawyer or a local tenants' association.You also have a right to take legal action against your landlord for breach of contract if he or she breaches the lease, fails to return your deposit, takes unwarranted deductions from your deposit, or fails to make repairs. Before proceeding, you will want to discuss your options with a lawyer.</template>
+</category>
+
+<category><pattern>WHAT * JUST CAUSE ^ EVICTION ^</pattern>
+<template>The “just cause” rules restrict landlords’ ability to evict tenants to a list laid out in a local ordinance, and they require landlords to tell tenants why they’re being asked to leave. Some 15 California cities have enacted just cause eviction rules, a list that includes San Francisco, Oakland, Berkeley, Hayward, East Palo Alto and Richmond, according to Tenants Together, a statewide tenant advocacy group. Some cities’ rules are paired with rent control ordinances (and are effective on units covered by those ordinances), like those in Oakland and San Francisco, while others – like Richmond’s ordinance, which restricts evictions from homes in foreclosure – stand alone.The “just cause” rules restrict landlords’ ability to evict tenants to a list laid out in a local ordinance, and they require landlords to tell tenants why they’re being asked to leave. Some 15 California cities have enacted just cause eviction rules, a list that includes San Francisco, Oakland, Berkeley, Hayward, East Palo Alto and Richmond, according to Tenants Together, a statewide tenant advocacy group. Some cities’ rules are paired with rent control ordinances (and are effective on units covered by those ordinances), like those in Oakland and San Francisco, while others – like Richmond’s ordinance, which restricts evictions from homes in foreclosure – stand alone.</template>
+</category>
 
 </aiml>
