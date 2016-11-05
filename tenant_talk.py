@@ -47,5 +47,4 @@ class StudentPage(Handler):
 		API.talk(user_key, app_id, host, botname, input_text, session_id, recent=True)
 		self.redirect('/results?question=' + content)
 
-app = webapp2.WSGIApplication([('/', StudentPage)],
-								debug=True)
+app = webapp2.WSGIApplication([('/', StudentPage),], debug=True)
