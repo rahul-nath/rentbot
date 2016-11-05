@@ -11,6 +11,8 @@ conversation = []
 def showMain():
 	'''Shows the main page'''
 	if request.method == 'GET':
+		global conversation
+		conversation = []
 		return render_template('main.html', conversation=conversation)
 	if request.method == 'POST':
 		error = ''
@@ -21,6 +23,11 @@ def showMain():
 		else:
 			error = 'Please enter a question'
 		return render_template('main.html', conversation=conversation, error=error)
+
+@app.route('/clear', methods=['POST'])
+def clearHistory():
+	'''Clears the chat history'''
+	return redirect('/')
 
 if __name__ == '__main__':
 	app.debug = True
