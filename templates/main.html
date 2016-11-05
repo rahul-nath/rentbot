@@ -42,12 +42,13 @@
               <!--TODO Fill out this content with objects-->
               <!--sample data start-->
 
-              {% for tup in questions %}
+              {% for tup in conversation %}
                     <div class="list-group-item">
                       <h4 class="list-group-item-heading"></h4>
                       <span class="list-group-item-text">
                         <span name="q_description" value="q_description_value">
-                          {{ question }}
+                          {{ tup[0] }}
+                          {{ tup[1] }}
                         </span>
                       </span>
                     </div>
@@ -70,11 +71,9 @@
           <p align="center" style="font-size:40px">Join a Session</p>
           <br>
 
-          <form class="form-horizontal" role="form" method="post">
+          <form class="form-horizontal" role="form" action='{{ url_for("showMain") }}' method="post">
             <div class="input-group input-group-lg">
-
               <input name="question" type="text" class="form-control" placeholder="How Can I Help You?">
-
               <span class="input-group-btn">
                  <input type="submit" value="Get Help" class="btn btn-primary"></input>
               </span>
