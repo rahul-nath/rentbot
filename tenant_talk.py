@@ -3,6 +3,9 @@ import webapp2
 import jinja2
 from google.appengine.ext import ndb
 
+from pb_py import main as pbApi
+host = 'aiaas.pandorabots.com'
+
 """
 	TODO:
 	- create a post request in the student handler to add 1 to the student count
@@ -33,27 +36,16 @@ class Handler(webapp2.RequestHandler):
 		return t.render(params)
 
 	def render(self, template, **kw):
-			self.write(self.render_str(template, **kw))
+		self.write(self.render_str(template, **kw))
 
 class StudentPage(Handler):
 	def get(self):
-		# TODO: get questions from intermediary app
 		self.render('student.html', questions=questions)
 
 	def post(self):
 		content = self.request.get("question")
+		API.talk(user_key, app_id, host, botname, input_text, session_id, recent=True)
 		self.redirect('/results?question=' + content)
 
-class ResultsPage(Handler):
-	def get(self):
-		content = self.request.get("question")
-		# TODO: get questions from intermediary app
-		questions = []
-		self.render('results.html', questions=questions, content=content)
-
-	def post(self):
-		content = self.request.get("content")
-
-app = webapp2.WSGIApplication([('/', StudentPage),
-								('/results', ResultsPage),],
+app = webapp2.WSGIApplication([('/', StudentPage)],
 								debug=True)
