@@ -3,7 +3,7 @@ import webapp2
 import jinja2
 from google.appengine.ext import ndb
 
-from PbPython import main as pbApi
+from pb_py import main as pbApi
 host = 'aiaas.pandorabots.com'
 from secret import app_id, user_key, botname
 
