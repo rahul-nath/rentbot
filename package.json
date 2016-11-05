@@ -1,0 +1,22 @@
+{
+  "name": "rentbot",
+  "version": "1.0.0",
+  "description": "Chat bot to answer renter questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afumagalli/rentbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afumagalli/rentbot/issues"
+  },
+  "homepage": "https://github.com/afumagalli/rentbot#readme",
+  "dependencies": {
+    "pb-cli": "^1.0.3"
+  }
+}
