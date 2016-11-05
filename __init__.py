@@ -19,7 +19,8 @@ def showMain():
 		question = request.form.get('question', '')
 		if question and not question.isspace():
 			response = pbApi.talk(user_key, app_id, host, botname, question)
-			conversation.append((question, response['response']))
+			answer = response['response'].replace('\n', '<br />')
+			conversation.append((question, answer))
 		else:
 			error = 'Please enter a question'
 		return redirect('/')

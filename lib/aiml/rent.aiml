@@ -2,7 +2,7 @@
 <aiml>
 
 <category><pattern>WHAT ARE MY RIGHTS ^</pattern>
-<template>1. Advertising cannot contain any statement indicating a preference or limitation based on any of the protected classes.<br/>2. The landlord may not make any similar implication or statement.<br/>3. A landlord cannot say that an apartment is not available when in fact it is available.<br/>4. A landlord cannot use a different set of rules for assessing applicants belonging to a protected class.<br/>5. A landlord cannot refuse to rent to persons in a protected class.<br/>6. A landlord cannot provide different services or facilities to tenants in a protected class or require a larger deposit, or treat late rental payments differently.<br/>7. A landlord cannot end a tenancy for a discriminatory reason.<br/>8. A landlord cannot harass you.</template> 
+<template>1. Advertising cannot contain any statement indicating a preference or limitation based on any of the protected classes.<br/>2. The landlord may not make any similar implication or statement.<br/>3. A landlord cannot say that an apartment is not available when in fact it is available.<br/>4. A landlord cannot use a different set of rules for assessing applicants belonging to a protected class.<br/>5. A landlord cannot refuse to rent to persons in a protected class.<br/>6. A landlord cannot provide different services or facilities to tenants in a protected class or require a larger deposit, or treat late rental payments differently.<br/>7. A landlord cannot end a tenancy for a discriminatory reason.<br/>8. A landlord cannot harass you.</template>
 </category>
 
 <category><pattern>WHAT HAPPENS * EVICTED ^</pattern>
