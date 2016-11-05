@@ -15,13 +15,18 @@
 .custom-submit-button{
 	position: absolute;
 	padding-right: 15px;
-	right: 0;	
+	right: 0;
 }
 
 .custom-submit-button{
 	position: absolute;
 	padding-right: 15px;
 	float: right;
+}
+
+.header-image {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
