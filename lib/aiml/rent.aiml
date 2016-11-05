@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category><pattern>WHAT ARE MY RIGHTS *</pattern>
+<template>Your rights as a tennat...</template>
+</category>
+
+<category><pattern>WHAT HAPPENS * EVICTED *</pattern>
+<template>If you get evicted...</template>
+</category>
+
+<category><pattern>WHO * REGULATES * RENT * SAN FRANCISCO *</pattern>
+<template>In San Francisco...</template>
+</category>
+
+<category><pattern>WHAT * RENT CONTROL * SAN FRANCISCO *</pattern>
+<template>Rent control is...</template>
+</category>
+
+<category><pattern>HOW MANY DAYS * SECURITY DEPOSIT *</pattern>
+<template>Security desposits are available...</template>
+</category>
+
+<category><pattern>* DISPOSSESSORY AFFIDAVIT *</pattern>
+<template>I don't even know what that is...</template>
+</category>
+
+</aiml>
