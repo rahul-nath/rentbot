@@ -13,10 +13,14 @@ def showMain():
 	if request.method == 'GET':
 		return render_template('main.html', conversation=conversation)
 	if request.method == 'POST':
+		error = ''
 		question = request.form.get('question', '')
-		response = pbApi.talk(user_key, app_id, host, botname, question)
-		conversation.append((question, response['response']))
-		return render_template('main.html', conversation=conversation)
+		if question and not question.isspace():
+			response = pbApi.talk(user_key, app_id, host, botname, question)
+			conversation.append((question, response['response']))
+		else:
+			error = 'Please enter a question'
+		return render_template('main.html', conversation=conversation, error=error)
 
 if __name__ == '__main__':
 	app.debug = True
