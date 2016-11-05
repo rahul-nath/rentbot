@@ -2,3 +2,4 @@
 /node_modules
 chatbot.json
 secret.py
+*.pyc
