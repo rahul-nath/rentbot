@@ -42,13 +42,12 @@
               <!--TODO Fill out this content with objects-->
               <!--sample data start-->
 
-              {% for tup in conversation %}
+              {% for tup in questions %}
                     <div class="list-group-item">
                       <h4 class="list-group-item-heading"></h4>
                       <span class="list-group-item-text">
                         <span name="q_description" value="q_description_value">
-                          Question: {{ tup[0] }}
-                          Answer: {{ tup[1] }}                          
+                          {{ question }}
                         </span>
                       </span>
                     </div>
