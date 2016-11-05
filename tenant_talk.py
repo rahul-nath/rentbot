@@ -6,6 +6,8 @@ from google.appengine.ext import ndb
 from pb_py import main as pbApi
 host = 'aiaas.pandorabots.com'
 
+from secret import app_id, user_key, botname
+
 """
 	TODO:
 	- create a post request in the student handler to add 1 to the student count
@@ -26,6 +28,7 @@ host = 'aiaas.pandorabots.com'
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),
 								autoescape = True)
+conversation = []
 
 class Handler(webapp2.RequestHandler):
 	def write(self, *a, **kw):
@@ -38,13 +41,14 @@ class Handler(webapp2.RequestHandler):
 	def render(self, template, **kw):
 		self.write(self.render_str(template, **kw))
 
-class StudentPage(Handler):
+class MainPage(Handler):
 	def get(self):
-		self.render('student.html', questions=questions)
+		self.render('main.html', conversation=conversation)
 
 	def post(self):
-		content = self.request.get("question")
-		API.talk(user_key, app_id, host, botname, input_text, session_id, recent=True)
-		self.redirect('/results?question=' + content)
+		question = self.request.get('question')
+		response = pbApi.talk(user_key, app_id, host, botname, question)
+		conversation.append((question, response['response']))
+		self.render('main.html', conversation=conversation)
 
-app = webapp2.WSGIApplication([('/', StudentPage),], debug=True)
+app = webapp2.WSGIApplication([('/', MainPage),], debug=True)
